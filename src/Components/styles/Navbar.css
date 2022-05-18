@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+.navbar{
+    width: 100%;
+    background-color: #e10600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Koulen";
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: .5s;
+}
+a:hover{  
+    background-color: rgb(14, 12, 12);
+}
+.burber{
+    display: none;
+}
+.logo{
+    width: 100px;
+    margin-left: 10px;
+}
+
+
+
+/* Responzivní menu */
+
+@media screen and (max-width: 800px) {
+    .links a{
+        display: none;
+    }
+    .burber{
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        cursor: pointer;
+    }
+    .burber div{
+        width: 40px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    #burOne{
+        transform: translateY(10px);
+    }
+    #burTwo{
+        transform: translateY(10px);
+    }
+    #burThree{
+        transform: translateY(10px);
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .navbar.responsive .logo{
+        display: none;
+    }
+    .navbar.responsive .links{
+        width: 100%;    
+    }
+    .navbar.responsive a{
+        background-color: black;
+        display: block;
+    }
+    .navbar.responsive #burOne{
+        transform: rotate(-45deg) translate(-15px, 15px);
+    }
+    .navbar.responsive #burTwo{
+        opacity: 0;
+    }
+    .navbar.responsive #burThree{
+        transform: rotate(45deg);
+    }
+}

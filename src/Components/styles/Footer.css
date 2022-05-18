@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+footer{
+    width: 100%;
+    background-color: #08080C;
+    height: 150px;
+    padding: 10px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.icons a{
+    padding: 0;
+}
+.icons-svg{
+    margin-top: 5px;
+    width: 100%;
+    transition: .5s;
+}
+#facebook:hover{
+    fill: #1877F2;
+}
+#linkedin:hover{
+    fill: #0A66C2;
+}
+#instagram:hover{
+    fill: #E54472;
+}
+#git:hover{
+    fill: #FA4F28;
+}
+
+.footer-links a{
+    color: #a8a8a8;
+}
+.footer-text{
+    font-family: 'Roboto';
+    color: #a8a8a8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.footer-text a:hover{
+    color: white;
+}
+.footer-text div:hover{
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    footer{
+        height: 230px;
+    }
+    .footer-text{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .footer-text .footer-links{
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: center;
+    }
+    .footer-text .footer-little-text-one{
+        grid-row: 2/3;
+        
+    }
+    .footer-text .footer-little-text-two{
+        grid-row: 3/4;
+    }
+}
+@media screen and (max-width: 550px) {
+    footer svg{
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+    .footer-text{
+        font-size: 15px;
+        row-gap: 20px;
+    }
+    .line{
+        display: none;
+    }
+}
