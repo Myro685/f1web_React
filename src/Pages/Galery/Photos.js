@@ -20,17 +20,17 @@ function Photos() {
         3:{
             id: 3,
             img: Beautiful,
-            text: 'Nejvíce sexy věc na trati'
+            text: 'Dancing bulls'
         },
         4:{
             id: 4,
             img: Jumping,
-            text: 'Skákající traktor'
+            text: 'Lewis Hamilton v Mercedesu'
         },
         5:{
             id: 5,
             img: MyBoy,
-            text: 'Majitel našich srdcí <3'
+            text: 'Sebastian Vettel 4 násobný mistr světa'
         },
     }
     return Object.keys(photosObject).map((obj, i) => {
