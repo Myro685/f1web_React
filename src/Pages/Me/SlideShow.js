@@ -1,27 +1,22 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import One from './Photos/one.jpg';
+import One from './Photos/one.jpeg';
 import Two from './Photos/two.jpg';
 import Three from './Photos/three.jpeg';
-import Four from './Photos/four.jpg';
 
 const fadeImages = [
   {
     url: One,
-    caption: 'To nejsem já'
+    caption: 'Dovolená v Itálii'
   },
   {
     url: Two,
-    caption: 'Tohle jsem já jako Sugar denny'
+    caption: 'Klobouček by celkem ušel'
   },
   {
     url: Three,
-    caption: 'Tady běhám'
-  },
-  {
-    url: Four,
-    caption: 'Tady jsem s kočkou'
+    caption: 'Zimní focení'
   },
 ];
 
